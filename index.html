@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="citygo, 3D gaussian splatting, large-scale scene reconstruction, image-based rendering">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -117,15 +117,15 @@
 <!--                  </span>-->
 
                   <!-- Github link -->
-<!--                  <span class="link-block">-->
-<!--                    <a href="https://github.com/YOUR REPO HERE" target="_blank"-->
-<!--                    class="external-link button is-normal is-rounded is-dark">-->
-<!--                    <span class="icon">-->
-<!--                      <i class="fab fa-github"></i>-->
-<!--                    </span>-->
-<!--                    <span>Code</span>-->
-<!--                  </a>-->
-<!--                </span>-->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Coming soon</span>
+                  </a>
+                </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -216,6 +216,11 @@
           surroundings. The final model enables photorealistic rendering with significant speedups for
           cinematic or real-time performance on lightweight devices.
       </h2>
+      <video poster="" id="tree" autoplay controls muted loop style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+        <!-- Your video here -->
+        <source src="static/videos/wo_id_wo_audio.mp4"
+        type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -266,28 +271,61 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Experimental Results</h2>
+      <div id="1" class="carousel results-carousel">
+        <img src="static/images/quality.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+            Qualitative comparison of our method and baseline methods on the Area-H and Area-L datasets.
+        </h2>
+        <div class="has-text-centered">
+          <img src="static/images/res.jpg" alt="MY ALT TEXT"/>
+        </div>
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+            <!-- Your video file here -->
+            <source src="static/videos/wo_id_res1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+            <!-- Your video file here -->
+            <source src="static/videos/wo_id_res2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop style="display: block; margin: 0 auto; max-width: 100%; height: auto;">\
+            <!-- Your video file here -->
+            <source src="static/videos/wo_id_res3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video4" autoplay controls muted loop style="display: block; margin: 0 auto; max-width: 100%; height: auto;">\
+            <!-- Your video file here -->
+            <source src="static/videos/wo_id_res4.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+  <!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Application</h2>
       <div id="results-carousel" class="carousel results-carousel">
-<!--        <div class="item item-video1">-->
-<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel1.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video2">-->
-<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel2.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video3">-->
-<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel3.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
+        <div class="item item-video3">
+          <video poster="" id="video" autoplay controls muted loop style="display: block; margin: 0 auto; max-width: 100%; height: auto;">\
+            <!-- Your video file here -->
+            <source src="static/videos/wo_id_app.mp4"
+            type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
   </div>
@@ -299,7 +337,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{liu2025citygolightweighturbanmodeling,
+      title={{CityGo: Lightweight Urban Modeling and Rendering with Proxy Buildings and Residual Gaussians}},
+      author={Weihang Liu and Yuhui Zhong and Yuke Li and Xi Chen and Jiadi Cui and Honglong Zhang and Lan Xu and Xin Lou and Yujiao Shi and Jingyi Yu and Yingliang Zhang},
+      year={2025},
+      eprint={2505.21041},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2505.21041},
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
